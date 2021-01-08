@@ -1,0 +1,387 @@
+@font-face {
+  font-family: 'Bebas Neue';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Crimson Text'),
+    url('../fonts/BebasRegular.woff') format('woff'),
+    url('../fonts/BebasRegular.ttf') format('ttf'),
+    url('../fonts/BebasRegular.eot') format('eot');
+}
+
+@font-face {
+  font-family: 'Bebas Neue';
+  font-style: normal;
+  font-weight: bold;
+  src: local('Crimson Text'),
+    url('../fonts/BebasBold.woff') format('woff'),
+    url('../fonts/BebasBold.ttf') format('ttf'),
+    url('../fonts/BebasBold.eot') format('eot');
+}
+
+@font-face {
+  font-family: 'Bebas Neue';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Crimson Text'),
+    url('../fonts//BebasBook.woff') format('woff'),
+    url('../fonts//BebasBook.ttf') format('ttf'),
+    url('../fonts//BebasBook.eot') format('eot');
+}
+
+@font-face {
+  font-family: 'Bebas Neue';
+  font-style: normal;
+  font-weight: 200;
+  src: local('Crimson Text'),
+    url('../fonts/BebasThin.woff') format('woff'),
+    url('../fonts/BebasThin.ttf') format('ttf'),
+    url('../fonts/BebasThin.eot') format('eot');
+}
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default padding */
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Set core body defaults */
+html, body {
+  font-family: 'Bebas Neue', sans-serif !important; 
+}
+
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+  font-weight: normal;
+	font-size: 16px;
+	color: #fff;
+}
+
+/* Remove list styles on ul, ol elements with a class attribute */
+ul[class],
+ol[class] {
+  list-style: none;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+a {
+  margin:0;
+  padding:0;
+  font-size:100%;
+  vertical-align:baseline;
+  text-decoration: none;
+  background:transparent;
+  }
+
+a img, :link img, :visited img {
+  border: none;
+}
+
+/* Make images easier to work with */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Natural flow and rhythm in articles by default */
+article > * + * {
+  margin-top: 1em;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations and transitions for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  * {
+ animation-duration: 0.01ms !important;
+ animation-iteration-count: 1 !important;
+ transition-duration: 0.01ms !important;
+ scroll-behavior: auto !important;
+  }
+}
+
+.text-1 {
+  color: #fff;
+}
+
+.text-2 {
+  color: #242735;
+}
+
+.bg-1 {
+  background-color: #323444;
+}
+
+.bg-2 {
+  background-color: #242735;
+}
+
+/* Header */
+
+.header {
+  letter-spacing: 1px;
+}
+
+.header__top {
+  padding: 25px 0 100px;
+  text-align: center;
+}
+
+.logo {
+  display: inline-block;
+  padding: 10px;
+}
+
+.logo__img {
+  width: 230px;
+} 
+
+.header__text-block {
+  font-family: 'Bebas Neue';
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.header__title {
+  font-weight: bold;
+  font-size: 60px;
+}
+
+.header__decs {
+  font-weight: normal;
+  font-size: 40px;
+}
+
+.header__bottom {
+  text-align: center;
+  background: #242735;
+  padding: 20px 0;
+}
+
+.promotion-timer__title {
+  font-family: 'Bebas Neue';
+  font-size: 36px;
+  color: #ffffff;
+}
+
+.timer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0 50px;
+}
+
+.timer .timer__block {
+  width: 90px;
+  height: 80px;
+  padding: 5px;
+  font-size: 16px;
+  font-family: 'Bebas Neue';
+  font-weight: 300;
+  color: #666168;
+  letter-spacing: 0.5px;
+  border: 1px solid #A79C9C;
+  border-radius: 10px;
+  margin-left: 20px;
+}
+
+.timer .timer__block:first-child {
+  margin-left: 0;
+}
+
+.timer .timer__block > span {
+  display: inline-block; 
+  font-weight: bold;
+  font-size: 60px;
+  color: #FFB800;
+  line-height: normal;
+  padding-bottom: 5px;
+}
+
+.btn-call { 
+  display: inline-block;
+  padding: 10px 50px 5px 50px;
+  text-decoration: none;
+  color: #242735;
+  font-size: 2.3em;
+  font-family: 'Bebas Neue';
+  font-weight: bold;
+  letter-spacing: 2px;
+  background-color: #FFB800;
+  border-radius: 50px;
+  cursor: pointer;
+  border: 1px solid transparent;
+  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+.btn-call:hover, .btn-call:active {
+  color: #242735;
+  box-shadow: #FFB800 1px 1px 2px 2px;
+}
+
+
+.btn-call .call-icon {
+  background: url('../img/phone-call.png') center no-repeat;
+  display: inline-block;
+  width: 45px;
+  height: 45px;
+  vertical-align: middle;
+  margin: 0 5px 0 10px;
+} 
+/* End Header */
+
+/* Section connnect */
+
+.section {
+	padding: 20px 0;
+	color: #fff;
+	text-align: center;
+}
+
+.section__title {
+  text-align: center;
+  font-size: 36px;
+  color: #ffffff;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-weight: bold;
+  padding-bottom: 28px;
+}
+
+.btn-connect-group {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.btn-connect-group .btn-call {
+  text-align: center;
+  width: 426px;
+	max-width: 100%;
+  margin-bottom: 20px;
+  color: #fff;
+  font-weight: 300;
+  font-size: 32px;
+  text-transform: uppercase;
+}
+
+.btn-connect-group .btn-call:hover, .btn-call:active {
+  color: #fff;
+  box-shadow: none;
+}
+
+.btn-vb {
+  background-color: #574E92;
+}
+
+.btn-wh {
+  background-color: #0FBC17;
+}
+
+.btn-tg {
+  background-color: #2CA5E0;
+}
+
+.btn-connect-group .btn-call > i {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  vertical-align: middle;
+  margin: 0 5px 0 10px;
+}
+
+.vb-icon {
+  background: url('../img/viber.png') center no-repeat;
+}
+
+.wh-icon {
+  background: url('../img/whatsapp.png') center no-repeat;
+}
+
+.tg-icon {
+  background: url('../img/telegram.png') center no-repeat;
+}
+/* End Section connnect */
+
+
+/* Section service */
+.service-wrap {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	justify-content: space-evenly;
+	align-content: space-evenly;
+	width: 80%;
+	margin: 0 auto;
+
+}
+
+.service-item	{	
+	flex: 0 0 29%;
+  margin: 20px 0;
+	background-color: #fff;
+	border-radius: 15px;
+	padding: 20px;
+}
+
+.service-item__img{
+	width: 180px;
+	height: 180px;
+  overflow: hidden;
+	border-radius: 50%;	
+	margin: 0 auto;
+	border: #FFB800 5px solid;
+}
+
+.service-img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	
+}
+
+.service-title {
+	color: #242735;
+	font-size: 32px;
+	font-weight: bold;
+	padding: 45px 0 0;
+}
+
+
+/* End Section service */
