@@ -382,6 +382,52 @@ select {
 	font-weight: bold;
 	padding: 45px 0 0;
 }
-
-
 /* End Section service */
+
+
+/* Section About */
+.about {
+	padding-bottom: 80px;
+}
+.text-about {
+	font-size: 26px;
+	font-weight: normal;
+	line-height: normal;
+	letter-spacing: 1px;
+	padding: 0 75px;
+}
+
+/* End Section About */
+
+/* Section Autopark */
+
+.autopark {
+	padding-bottom: 150px;
+}
+
+.autopark .section__title {
+	padding-bottom: 90px;
+}
+
+.autopark__detail {
+	text-align: left;
+	font-size: 32px;
+	letter-spacing: 1px;
+	font-weight: 300;
+	line-height: 1.4;
+	padding-left: 150px;
+}
+
+.autopark__img {
+	position: relative;
+}
+
+.autopark__img > img{
+	position: absolute;
+	top: -32px;
+	bottom: 0;
+	right: 0;
+	left: 0;
+}
+
+/* End Section Auto */
