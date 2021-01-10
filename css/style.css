@@ -252,7 +252,7 @@ select {
 	display: inline-block;
 	width: 426px;
 	max-width: 100%;
-  padding: 10px 50px 5px 100px;
+  padding: 10px 50px 5px 50px;
   text-decoration: none;
   color: #242735;
   font-size: 2.3em;
@@ -269,10 +269,9 @@ select {
 .btn-call:before {
 	font-family: FontAwesome;
 	content: "\f095";
-	position: absolute;
-	left: 15%;
-	top: 15%;
-	bottom: 0;
+	display: inline-block;
+	margin-right: 5px;
+	vertical-align: middle;
 }
 
 .btn-call:hover, .btn-call:active {
@@ -515,10 +514,6 @@ select {
 		font-size: 1.5em;
 	}
 
-	.btn-call .call-icon {
-		background-size: 35px;
-	}
-
 	.timer .timer__block > span {
 		margin: 0 0 5px;
 	}
@@ -529,7 +524,7 @@ select {
 
 	.btn-connect-group .btn-call {
 		width: 100%;
-		font-size: 21px
+		font-size: 22px
 	}
 
 	.service-wrap .service-item {
@@ -540,14 +535,7 @@ select {
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width : 320px) {
-	.btn-call {
-		font-size: 1.4em;
-	}
 
-	.btn-connect-group .btn-call {
-		width: 100%;
-		font-size: 21px
-	}
 }
 
 
