@@ -522,6 +522,11 @@ select {
 		width: 100%;
 		font-size: 21px
 	}
+
+	.service-wrap .service-item {
+		flex: 1 0 auto;
+	}
+	
 }
 
 /* Custom, iPhone Retina */
