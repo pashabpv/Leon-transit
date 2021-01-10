@@ -2,7 +2,7 @@
   font-family: 'Bebas Neue';
   font-style: normal;
   font-weight: normal;
-  src: local('Crimson Text'),
+  src: local('Bebas Neue'),
     url('../fonts/BebasRegular.woff') format('woff'),
     url('../fonts/BebasRegular.ttf') format('ttf'),
     url('../fonts/BebasRegular.eot') format('eot');
@@ -12,7 +12,7 @@
   font-family: 'Bebas Neue';
   font-style: normal;
   font-weight: bold;
-  src: local('Crimson Text'),
+  src: local('Bebas Neue'),
     url('../fonts/BebasBold.woff') format('woff'),
     url('../fonts/BebasBold.ttf') format('ttf'),
     url('../fonts/BebasBold.eot') format('eot');
@@ -22,20 +22,31 @@
   font-family: 'Bebas Neue';
   font-style: normal;
   font-weight: 300;
-  src: local('Crimson Text'),
-    url('../fonts//BebasBook.woff') format('woff'),
-    url('../fonts//BebasBook.ttf') format('ttf'),
-    url('../fonts//BebasBook.eot') format('eot');
+  src: local('Bebas Neue'),
+    url('../fonts/BebasBook.woff') format('woff'),
+    url('../fonts/BebasBook.ttf') format('ttf'),
+    url('../fonts/BebasBook.eot') format('eot');
 }
 
 @font-face {
   font-family: 'Bebas Neue';
   font-style: normal;
   font-weight: 200;
-  src: local('Crimson Text'),
+  src: local('Bebas Neue'),
     url('../fonts/BebasThin.woff') format('woff'),
     url('../fonts/BebasThin.ttf') format('ttf'),
     url('../fonts/BebasThin.eot') format('eot');
+}
+
+@font-face {
+  font-family: 'FontAwesome';
+  font-style: normal;
+  font-weight: normal;
+  src: local('FontAwesome'),
+    url('../fonts/fontawesome-webfont.woff') format('woff'),
+    url('../fonts/fontawesome-webfont.woff2') format('woff2'),
+    url('../fonts/fontawesome-webfont.ttf') format('ttf'),
+    url('../fonts/fontawesome-webfont.eot') format('eot');
 }
 
 /* Box sizing rules */
@@ -236,8 +247,11 @@ select {
 }
 
 .btn-call { 
-  display: inline-block;
-  padding: 10px 50px 5px 50px;
+	position: relative;
+	display: inline-block;
+	width: 426px;
+	max-width: 100%;
+  padding: 10px 50px 5px 100px;
   text-decoration: none;
   color: #242735;
   font-size: 2.3em;
@@ -250,20 +264,21 @@ select {
   border: 1px solid transparent;
   transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
 }
+
+.btn-call:before {
+	font-family: FontAwesome;
+	content: "\f095";
+	position: absolute;
+	left: 15%;
+	top: 15%;
+	bottom: 0;
+}
+
 .btn-call:hover, .btn-call:active {
   color: #242735;
   box-shadow: #FFB800 1px 1px 2px 2px;
 }
-
-
-.btn-call .call-icon {
-  background: url('../img/phone-call.png') center no-repeat;
-  display: inline-block;
-  width: 45px;
-  height: 45px;
-  vertical-align: middle;
-  margin: 0 5px 0 10px;
-} 
+ 
 /* End Header */
 
 /* Section connnect */
@@ -309,34 +324,27 @@ select {
 .btn-vb {
   background-color: #574E92;
 }
+.btn-vb:before {
+	content: "\f2a0";
+}
 
 .btn-wh {
   background-color: #0FBC17;
+}
+
+.btn-wh:before {
+	content: "\f232";	
 }
 
 .btn-tg {
   background-color: #2CA5E0;
 }
 
-.btn-connect-group .btn-call > i {
-  display: inline-block;
-  width: 30px;
-  height: 30px;
-  vertical-align: middle;
-  margin: 0 5px 0 10px;
+.btn-tg:before {
+	content: "\f2c6";	
 }
 
-.vb-icon {
-  background: url('../img/viber.png') center no-repeat;
-}
 
-.wh-icon {
-  background: url('../img/whatsapp.png') center no-repeat;
-}
-
-.tg-icon {
-  background: url('../img/telegram.png') center no-repeat;
-}
 /* End Section connnect */
 
 
@@ -526,7 +534,7 @@ select {
 	.service-wrap .service-item {
 		flex: 1 0 auto;
 	}
-	
+
 }
 
 /* Custom, iPhone Retina */
