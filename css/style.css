@@ -259,16 +259,16 @@ select {
 	max-width: 100%;
   padding: 10px 50px 5px 50px;
   text-decoration: none;
-  color: #242735;
+  color: #FFB800;
   font-size: 2.3em;
   font-family: 'Bebas Neue';
   font-weight: bold;
   letter-spacing: 2px;
-  background-color: #FFB800;
+  /* background-color: #FFB800; */
   border-radius: 50px;
   cursor: pointer;
-  border: 1px solid transparent;
-  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+  border: 1px solid #FFB800;
+  transition: all ease 0.5s;
 }
 
 .btn-call:before {
@@ -279,11 +279,11 @@ select {
 	vertical-align: middle;
 }
 
-.btn-call:hover, .btn-call:active {
-  color: #242735;
-  box-shadow: #FFB800 1px 1px 2px 2px;
+.btn-call:hover, .btn-call:active, .btn-call:focus {
+	color: #242735;
+	background-color: #FFB800;
 }
- 
+
 /* End Header */
 
 /* Section connnect */
@@ -327,28 +327,41 @@ select {
 }
 
 .btn-vb {
-  background-color: #574E92;
+	background-color: #574E92;
+	border-color: #574E92;
 }
 .btn-vb:before {
 	content: "\f2a0";
 }
 
+.btn-vb:hover, .btn-vb:active, .btn-vb:visited {
+	background-color: rgba(87, 78, 146, 0.4);
+}
 .btn-wh {
-  background-color: #0FBC17;
+	background-color: #0FBC17;
+	border-color: #0FBC17;
 }
 
 .btn-wh:before {
 	content: "\f232";	
 }
 
+.btn-wh:hover, .btn-wh:active, .btn-wh:visited {
+	background-color: rgba(15, 188, 23, 0.4);
+}
+
 .btn-tg {
-  background-color: #2CA5E0;
+	background-color: #2CA5E0;
+	border-color: #2CA5E0;
 }
 
 .btn-tg:before {
 	content: "\f2c6";	
 }
 
+.btn-tg:hover, .btn-tg:active, .btn-tg:visited {
+	background-color: rgba(44, 165, 224, 0.4);
+}
 
 /* End Section connnect */
 
