@@ -82,7 +82,8 @@ dd {
 
 /* Set core body defaults */
 html, body {
-  font-family: 'Bebas Neue', sans-serif !important; 
+	font-family: 'Bebas Neue', sans-serif !important; 
+	overflow-x: hidden;
 }
 
 body {
